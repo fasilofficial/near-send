@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: ui-rounded, "SF Pro Rounded", "Nunito", "Avenir Next", sans-serif;
+}
+
+@layer components {
+  .primary-btn {
+    @apply inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-brand-700 to-brand-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:from-brand-700 hover:to-brand-700;
+  }
+
+  .secondary-btn {
+    @apply inline-flex w-full items-center justify-center rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50;
+  }
+
+  .chip {
+    @apply rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700;
+  }
+
+  .chip-active {
+    @apply border-brand-500 bg-brand-50 text-brand-700;
+  }
+}
