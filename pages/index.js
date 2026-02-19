@@ -398,7 +398,7 @@ export default function HomePage() {
             value={deviceName}
             onChange={(event) => updateName(event.target.value)}
           />
-          {/* <p className="text-xs text-slate-500">IP: {ip}</p> */}
+          <p className="text-xs text-slate-500">IP: {ip}</p>
           <p className="text-xs text-slate-500">
             Status: {connected ? "Connected" : "Connecting..."}
           </p>
